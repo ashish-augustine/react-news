@@ -14,7 +14,7 @@ const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
 const initialState = {
   isLoading: true,
   hits: [],
-  query: "SUMMER",
+  query: "WORLD CUP",
   page: 0,
   nbPages: 0,
 };
