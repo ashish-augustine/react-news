@@ -14,7 +14,7 @@ const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
 const initialState = {
   isLoading: true,
   hits: [],
-  query: "INTERNATIONAL",
+  query: "SUMMER",
   page: 0,
   nbPages: 0,
 };
@@ -53,8 +53,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ ...state, removeStory, handleSearch, handlePage }}
-    >
+      value={{ ...state, removeStory, handleSearch, handlePage }}>
       {children}
     </AppContext.Provider>
   );
